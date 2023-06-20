@@ -2,8 +2,9 @@ const closureSum = () => {
   let rememberedVariable = 0;
 
   return (num) => {
-    if (typeof num !== "number" || Number.isNaN(num))
+    if (typeof num !== "number" || Number.isNaN(num)) {
       return "Entered wrong value";
+    }
 
     return (rememberedVariable += num);
   };
